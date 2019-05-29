@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/second_new.css">
 
 	<script type="text/javascript" src="./js/main.js"></script>
-	<script type="text/javascript" src="./js/test.js"></script>
+	<script type="text/javascript" src="./js/img_util.js"></script>
 	<title>second_new</title>
 </head>
 <body>
@@ -17,10 +17,10 @@
 				<div class="content-menu-header"style="margin-top: 20px">
 					맛집
 				</div>
-				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('황궁 개꿀맛')">
+				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('황궁 개꿀맛'); setCurrentPage('황궁');">
 					1. 황궁
 				</div>
-				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('청운식당 맛없어')">
+				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('청운식당 맛없어'); setCurrentPage('청운식당');">
 					2. 청운식당
 				</div>
 				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('논두렁 갈비보다 김치찜')">
@@ -44,7 +44,13 @@
 			</div>
 
 			<div class="content-body-content">
-				<div class="content-body-imgbox"></div>
+				<div class="content-body-imgbox">
+					<div class="content-body-imgbox-element" onclick="loadImgData()" style="background-color: pink; width: 20%;"> 
+						<span> < </span>
+					</div>
+					<div class="content-body-imgbox-element" id="img-box" style="width: 60%;"></div>
+					<div class="content-body-imgbox-element" onclick="loadImgData()" style="background-color: red; width: 20%;"> > </div>
+				</div>
 
 				<div class="content-body-write">
 					<p class="content-write-p" id="writer"></p>
