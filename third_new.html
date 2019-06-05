@@ -4,8 +4,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/second_new.css">
 
 	<script type="text/javascript" src="./js/main.js"></script>
-	<script type="text/javascript" src="./js/test.js"></script>
-	<title>third_new</title>
+	<script type="text/javascript" src="./js/img_util.js"></script>
+	<title>fourth_new</title>
 </head>
 <body>
 	<div class="content-wrapper">
@@ -17,34 +17,37 @@
 				<div class="content-menu-header"style="margin-top: 20px">
 					의료
 				</div>
-				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('황궁 개꿀맛')">
-					1. 00한의원
+				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('전화 : 02-815-8632 <br><br>평일 : 09:30~ 18:00 <br> 토요일 :  09:30~15:00 <br> 일요일휴무 <br>'); setCurrentPage('명한의원');">
+					1. 명한의원
 				</div>
-				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('청운식당 맛없어')">
-					2. 00내과
+				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('전화 : 02-814-8899 <br><br> 평일 : 09:00~16:00 <br> 토요일 : 09:00 ~ 16:00 <br> 공휴일, 일요일 휴무'); setCurrentPage('에코이비인후과');">
+					2. 에코이비인후과
 				</div>
-				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('논두렁 갈비보다 김치찜')">
-					3. 00치과
+				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('전화 : 02-3280-7575 <br><br> 평일 : 09:30 ~ 18:30 <br> 토요일 : 09:30 ~ 14:00 <br> 공휴일,주말 휴무 '); setCurrentPage('연세하늘치과의원');">
+					3. 연세하늘치과의원
 				</div>
-				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('진짜 양많고 저렴하고 개꿀띠')">
-					4. 00안과 
+				<div class="content-menu-info"style="margin-top: 10px" onclick="fillTextbox('전화 : 02-812-2375 <br><br> 평일 : 09:30 ~ 19:00 <br> 토요일 : 09:30 ~ 15:00 <br> 공휴일,일요일 휴무'); setCurrentPage('명한의원'); setCurrentPage('상도밝은안과의원');">
+					4. 상도밝은안과의원 
 				</div> 	
 
 				<div class="content-menu-header" style="margin-top: 20px">약국</div>
 
-				<div class="content-menu-info"style="margin-top: 10px"onclick="fillTextbox('사실 한번도 안가봄')">
-					1. 00약국
+				<div class="content-menu-info"style="margin-top: 10px"onclick="fillTextbox('전화 : 02-2088-3043 <br><br>평일 : 08:30~23:00 <br> 토요일 : 11:00~23:00 <br> 일요일12:00~23:00'); setCurrentPage('숭실약국');">
+					1. 숭실약국
 				</div>
-				<div class="content-menu-info"style="margin-top: 10px"onclick="fillTextbox('아메리카노 시키면 쿠폰안줌')">
-					2. 00약국
-				</div>
-				<div class="content-menu-info"style="margin-top: 10px"onclick="fillTextbox('가격도 저렴하고 양도 많다 커피내기의 명소이다')">
-					3. 00약국
-				</div>				
+				<div class="content-menu-info"style="margin-top: 10px"onclick="fillTextbox('전화 : 02-824-6161 <br><br>평일 : 연중무휴 365일 운영'); setCurrentPage('유원약국');">
+					2. 유원약국
+				</div>								
 			</div>
 
 			<div class="content-body-content">
-				<div class="content-body-imgbox"></div>
+				<div class="content-body-imgbox">
+					<div class="content-body-imgbox-element" onclick="loadImgData(0)" style=" width: 20%; font-size: 70px;" > 
+						<span> < </span>
+					</div>
+					<div class="content-body-imgbox-element" id="img-box" style="width: 60%;"></div>
+					<div class="content-body-imgbox-element" onclick="loadImgData(1)" style=" width: 20%; font-size: 70px;"> > </div>
+				</div>
 
 				<div class="content-body-write">
 					<p class="content-write-p" id="writer"></p>

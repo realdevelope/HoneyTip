@@ -75,3 +75,12 @@ body {
 	text-align: center;
 	font-weight: bold;
 }
+.footer1 {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:70px;   
+    color: black;
+    text-align: center;
+    
+}

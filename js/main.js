@@ -19,6 +19,4 @@ function fillTextbox(text) {
 */
 function changePage(src) {
 	window.location.href = src;
-
-	print();
 }

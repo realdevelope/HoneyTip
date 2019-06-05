@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test sec</title>
+
+	<script type="text/javascript" src="./testjs/lib/jquery.js"></script>
+	<script type="text/javascript" src="./testjs/audioutil.js"></script>
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            var val = location.href.substr(
+                location.href.lastIndexOf('=') + 1
+            );
+            console.log('currentTime : ' + val);
+
+            start(val);
+        });
+	</script>
+</head>
+<body>
+	<audio id="test" src="../resource/숭실대_교가.mp3" muted="muted"></audio>
+</body>
+</html>
